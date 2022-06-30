@@ -12,6 +12,7 @@ namespace Avdelningsrapport
 {
     public partial class AddBookForm : Form
     {
+        public AddBookDelegate addBookCallback;
         string genre = "";
         //objekt som gör att vi kan lägga till nya böcker
         FileWriter addedBook = new FileWriter();
@@ -51,6 +52,12 @@ namespace Avdelningsrapport
             string newWriter = WriterTextBox.Text.Trim();
             string book = $"{newTitle}###{newWriter}###{genre}###true";
             addedBook.BookReader(book);
+            Book newBook = new Book();
+            newBook.Titel = newTitle;
+            newBook.Writer = newWriter;
+            newBook.Genre = genre;
+            newBook.TipAvailable = true;
+            addBookCallback(newBook);
             this.Close();
         }
     }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Avdelningsrapport
 {
-    class Book
+    public class Book
     {
         public string Titel { get; set; }
         public string Writer { get; set; }

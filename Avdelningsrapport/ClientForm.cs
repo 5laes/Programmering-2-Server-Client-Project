@@ -14,6 +14,7 @@ using System.Windows.Forms;
 
 namespace Avdelningsrapport
 {
+    public delegate void AddBookDelegate(Book book);
     public partial class ClientForm : Form
     {
         private Socket _clientSocket; // skapar en clientsocket
@@ -181,7 +182,13 @@ namespace Avdelningsrapport
         private void BTNAddBook_Click(object sender, EventArgs e)
         {
             AddBookForm bookForm = new AddBookForm();
+            bookForm.addBookCallback = new AddBookDelegate(this.AddBookCallback);
             bookForm.ShowDialog();
+        }
+
+        private void AddBookCallback(Book book)
+        {
+            BookListBox.Items.Add(book.ToString());
         }
     }
 }
