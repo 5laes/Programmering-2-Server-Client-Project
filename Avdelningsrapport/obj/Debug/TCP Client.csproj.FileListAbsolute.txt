@@ -1,0 +1,12 @@
+C:\Users\klarr\source\repos\Avdelningsrapport\Avdelningsrapport\obj\Debug\TCP Client.csproj.AssemblyReference.cache
+C:\Users\klarr\source\repos\Avdelningsrapport\Avdelningsrapport\obj\Debug\Avdelningsrapport.ClientForm.resources
+C:\Users\klarr\source\repos\Avdelningsrapport\Avdelningsrapport\obj\Debug\TCP Client.csproj.GenerateResource.cache
+C:\Users\klarr\source\repos\Avdelningsrapport\Avdelningsrapport\obj\Debug\TCP Client.csproj.CoreCompileInputs.cache
+C:\Users\klarr\source\repos\Avdelningsrapport\Avdelningsrapport\obj\Debug\Avdelningsrapport.Properties.Resources.resources
+C:\Users\klarr\source\repos\Avdelningsrapport\Avdelningsrapport\bin\Debug\Avdelningsrapport.exe.config
+C:\Users\klarr\source\repos\Avdelningsrapport\Avdelningsrapport\bin\Debug\Avdelningsrapport.exe
+C:\Users\klarr\source\repos\Avdelningsrapport\Avdelningsrapport\bin\Debug\Avdelningsrapport.pdb
+C:\Users\klarr\source\repos\Avdelningsrapport\Avdelningsrapport\obj\Debug\Avdelningsrapport.exe
+C:\Users\klarr\source\repos\Avdelningsrapport\Avdelningsrapport\obj\Debug\Avdelningsrapport.pdb
+C:\Users\klarr\source\repos\Avdelningsrapport\Avdelningsrapport\obj\Debug\Avdelningsrapport.AddBookForm.resources
+C:\Users\klarr\source\repos\Avdelningsrapport\Avdelningsrapport\obj\Debug\Avdelningsrapport.AddBookError.resources

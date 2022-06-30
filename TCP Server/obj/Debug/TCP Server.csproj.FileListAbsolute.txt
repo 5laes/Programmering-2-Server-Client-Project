@@ -1,0 +1,10 @@
+C:\Users\klarr\source\repos\Avdelningsrapport\TCP Server\bin\Debug\TCP Server.exe.config
+C:\Users\klarr\source\repos\Avdelningsrapport\TCP Server\bin\Debug\TCP Server.exe
+C:\Users\klarr\source\repos\Avdelningsrapport\TCP Server\bin\Debug\TCP Server.pdb
+C:\Users\klarr\source\repos\Avdelningsrapport\TCP Server\obj\Debug\TCP Server.csproj.AssemblyReference.cache
+C:\Users\klarr\source\repos\Avdelningsrapport\TCP Server\obj\Debug\TCP_Server.Properties.Resources.resources
+C:\Users\klarr\source\repos\Avdelningsrapport\TCP Server\obj\Debug\TCP_Server.ServerForm.resources
+C:\Users\klarr\source\repos\Avdelningsrapport\TCP Server\obj\Debug\TCP Server.csproj.GenerateResource.cache
+C:\Users\klarr\source\repos\Avdelningsrapport\TCP Server\obj\Debug\TCP Server.csproj.CoreCompileInputs.cache
+C:\Users\klarr\source\repos\Avdelningsrapport\TCP Server\obj\Debug\TCP Server.exe
+C:\Users\klarr\source\repos\Avdelningsrapport\TCP Server\obj\Debug\TCP Server.pdb
