@@ -10,5 +10,3 @@ Herman Hedning Nr.14###Jonas Darnell###Tidskrift###true
 Travronden Nr.8###Utg.Joakim Svensson###Tidskrift###false
 Skärkarlsliv###August Strindberg###Novellsamling###true
 Ett fat amontillado###Edgar Allan Poe###Novellsamling###true
-test###test###Novellsamling###true
-tes###test###Novellsamling###true

@@ -1,18 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Avdelningsrapport
 {
     public partial class AddBookForm : Form
     {
-        public AddBookDelegate addBookCallback;
         string genre = "";
         //objekt som gör att vi kan lägga till nya böcker
         FileWriter addedBook = new FileWriter();
@@ -39,6 +31,8 @@ namespace Avdelningsrapport
             GenreTextBox.Text = "Tidskrift";
         }
 
+        /*Har fortfarande inte gjort att listan uppdateras när man lägger till en bok
+         lyckas inte hitta någon bra och smidig lösning*/
         private void BTNAddBook_Click(object sender, EventArgs e)
         {
             if (TitleTextBox.Text.Trim() == "" || WriterTextBox.Text.Trim() == "" || GenreTextBox.Text == "")
@@ -52,12 +46,6 @@ namespace Avdelningsrapport
             string newWriter = WriterTextBox.Text.Trim();
             string book = $"{newTitle}###{newWriter}###{genre}###true";
             addedBook.BookReader(book);
-            Book newBook = new Book();
-            newBook.Titel = newTitle;
-            newBook.Writer = newWriter;
-            newBook.Genre = genre;
-            newBook.TipAvailable = true;
-            addBookCallback(newBook);
             this.Close();
         }
     }

@@ -1,15 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Diagnostics;
 using System.Drawing;
 using System.IO;
-using System.Linq;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace TCP_Server
@@ -55,7 +49,20 @@ namespace TCP_Server
             {
                 MessageBox.Show("You have not selected an object!", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }            
+        }
+        
+        //exporterar all text i textrutan till ett dokument med aktiel tid som dokumentet skapades
+        private void BTNExportToFile_Click(object sender, EventArgs e)
+        {
+            string currentTime = DateTime.Now.ToString("yyyy_MM_dd_HH_mm_ss");
+            using (StreamWriter text = new StreamWriter($"Rapport_{currentTime}.txt", true))
+            {
+                foreach (var item in RecivedBookListBox.Items)
+                {
+                    text.Write(item.ToString() + "\n");
+                }
+            }
+        }
 
         //startar servern och gör den redo att acceptera information
         private void StartServer()
@@ -127,18 +134,6 @@ namespace TCP_Server
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        private void BTNExportToFile_Click(object sender, EventArgs e)
-        {
-            string currentTime = DateTime.Now.ToString("yyyy_MM_dd_HH_mm_ss");
-            using (StreamWriter text = new StreamWriter($"Rapport_{currentTime}.txt", true))
-            {
-                foreach (var item in RecivedBookListBox.Items)
-                {
-                    text.Write(item.ToString() + "\n");
-                }
             }
         }
 
